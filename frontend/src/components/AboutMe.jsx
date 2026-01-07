@@ -45,39 +45,16 @@ const AboutMe = () => {
                     </div>
 
                     <div className="relative group flex justify-center items-center">
-                        <div className="absolute inset-0 bg-primary/20 rounded-full transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 w-64 h-64 mx-auto"></div>
-                        <div className="relative w-64 h-64 glass-morphism rounded-full flex items-center justify-center overflow-hidden border-2 border-white/10">
-                            {/* 
-                  INSTRUCTION: 
-                  1. Optimize your picture before adding:
-                     - Recommended size: 400x400 pixels or 500x500 pixels
-                     - Format: WebP (best) or JPEG with 80-90% quality
-                     - Use tools like: squoosh.app, tinypng.com, or Photoshop
-                  2. Place your optimized picture in the 'frontend/public/' folder.
-                  3. Make sure to have both WebP and fallback JPEG versions.
-                */}
-                            <picture>
-
-                                <source
-                                    srcSet="/profile.jpg"
-                                    type="image/jpg"
-                                />
-
-                                <source
-                                    srcSet="/profile.jpg"
-                                    type="image/jpg"
-                                />
-                                <img
-                                    src="/profile.jpg"
-                                    alt="Lidia Shenkut"
-                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105 transition-transform duration-300"
-                                    width="256"
-                                    height="256"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                            </picture>
-                            <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent rounded-full"></div>
+                        <div className="absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 w-full h-full max-w-[400px]"></div>
+                        <div className="relative w-full max-w-[400px] aspect-[4/5] glass-morphism rounded-2xl flex items-center justify-center overflow-hidden border-2 border-white/10">
+                            <img
+                                src="/profile1.jpg"
+                                alt="Lidia Shenkut"
+                                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent"></div>
                         </div>
                     </div>
                 </div>
